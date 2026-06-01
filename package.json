@@ -1,6 +1,8 @@
 {
   "name": "nijin-mac-app",
   "version": "1.0.0",
+  "description": "Nijin Mac App",
+  "author": "yourname",
   "main": "main.js",
   "scripts": {
     "build": "electron-builder --mac"
@@ -11,6 +13,7 @@
   },
   "build": {
     "appId": "com.nijin.app",
+    "publish": null,
     "mac": {
       "target": "dmg"
     }
