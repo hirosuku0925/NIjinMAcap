@@ -3,11 +3,13 @@ on: [push]
 jobs:
   build:
     runs-on: macos-latest
+    env:
+      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true  # ←これを追加
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with: 
-          node-version: '20'
+          node-version: '22'  # Node.js 22を指定
       - run: npm install
       - run: npm run build
       - uses: actions/upload-artifact@v4
