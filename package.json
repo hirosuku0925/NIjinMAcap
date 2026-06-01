@@ -15,7 +15,8 @@
     "appId": "com.nijin.app",
     "publish": null,
     "mac": {
-      "target": "dmg"
+      "target": "dmg",
+      "icon": "build/icon.icns"
     }
   }
 }
